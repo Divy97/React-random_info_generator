@@ -18,6 +18,11 @@ const MyCard = ({details}) => {
                         <span>{details.name?.last}</span>
                     </h1>
                 </CardTitle>
+                <CardText>
+                    <p><FaMapMarkedAlt/>{details.location?.city}</p>
+                    <p><FaPhone/>{details.phone}</p>
+                    <p><FaEnvelope/>{details.email}</p>
+                </CardText>
             </CardBody>
         </Card>
     )
